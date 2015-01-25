@@ -31,8 +31,8 @@ The cleanup script does the following using rshape2 package:
 
 ### Executing the script
 
-To run the script, source run_analysis.R which includes also the run command at the end. 
-After running completion, the derstination file named tidydata.txt you will see the following output during script execution:
+To run the script, source("run_analysis.R") which includes also the run command at the end. 
+After running is completed, the destination file named tidydata.txt is created. Several info messages are printed in the console during execution
 
 
 
