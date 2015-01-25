@@ -6,8 +6,7 @@ The cleanup script does the following using rshape2 package:
     Uses descriptive activity names  for the receving the data set
     Merges the respective training and the test sets to create one data set.
     Subestting only the measurements on the mean and standard deviation
-    Uses descriptive activity names  the data set
-    Appropriately labels the final category labels using factor commmand
+    Appropriately labels the final categorical labels using factor commmand
     Reshape the data set two times (using melt and dcast function) to the requested format
     Creates a second, independent tidy data set with the average of each variable for each activity and each subject.
 
@@ -33,29 +32,12 @@ The cleanup script does the following using rshape2 package:
 ### Executing the script
 
 To run the script, source run_analysis.R which includes also the run command at the end. 
-After running completion, you will see the following output during script execution:
-
-[run_analysis.R-> Getting and Cleaning Data Project 
-[run_analysis.R-> --------------------------------- 
-[run_analysis.R-> Reading datasets. 
-[run_analysis.R-> Getting datasets: ./getdata/datasets/test 
-[run_analysis.R->   reading features... 
-[run_analysis.R->   reading activities... 
-[run_analysis.R->   reading subjects... 
-[run_analysis.R-> Getting datasets: ./getdata/datasets/train 
-[run_analysis.R->   reading features... 
-[run_analysis.R->   reading activities... 
-[run_analysis.R->   reading subjects... 
-[run_analysis.R-> Joining datasets. 
-[run_analysis.R-> Long Format Melting. 
-[run_analysis.R-> Wide Format Dcasting. 
-[run_analysis.R-> Saving clean data to: ./getdata/datasets/cleaned.txt
-
+After running completion, the derstination file named tidydata.txt you will see the following output during script execution:
 
 
 
 ### Cleaned Data Set
 
 The source data (test data have  2947 rows and train data have 7352 rows)  
-The resulting clean dataset is the file in this repository at: datasets/cleaned.txt, in total 181 rows.  
+The resulting clean dataset is the file in this repository at: datasets/tidydata.txt, in total 181 rows.  
 It contains one row for each subject/activity pair and columns for subject, activity, and each feature with mean and standard deviation
