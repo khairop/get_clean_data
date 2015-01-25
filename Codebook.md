@@ -1,9 +1,8 @@
-Samsung UCI summarized data set
+### Codebook.md
 ===============================
 
-The dataset ([tidy_dataset.txt](./tidy_dataset.txt)) was created based on the [Human Activity Recognition Using Smartphones Data Set](http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones) from the [UCI Machine Learning Repository](http://archive.ics.uci.edu/ml/index.html). It was an experiment carried out with a group of 30 volunteers within an age bracket of 19-48 years, where each person performed six activities (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING) wearing a smartphone (Samsung Galaxy S II) on the waist. Using its embedded accelerometer and gyroscope, wthe experiment captured several measurements (3-axial linear acceleration and 3-axial angular velocity at a constant rate of 50Hz), and the obtained dataset has been randomly partitioned into two sets, where 70% of the volunteers was selected for generating the training data and 30% the test data.
-
-For this dataset, we merged the training and test data into a single dataset, and calculated the averages for all mean and standard deviation-related measurements, grouped by subject and activity. The end result contains 68 columns (variables), which are described below:
+For the final dataset, we merged the training and test data into a single dataset, and calculated the averages for all mean and standard deviation-related measurements, grouped by subject and activity. 
+The end result contains 68 columns (variables), which are described below:
 
 * **subject**: A number (1-30) for which subject the observation belongs
 * **activity**: A factor with six possible values, indicating the activity performed by the subject, with the following values: WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING
